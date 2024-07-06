@@ -13,11 +13,11 @@
 
         body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #f9f9f9;
+            background: linear-gradient(135deg, #f06, #4a90e2);
             color: #333;
             margin: 0;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
             min-height: 100vh;
             padding: 0 20px;
@@ -39,15 +39,16 @@
             border: 3px solid #ddd;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
             margin: 20px 0;
             box-sizing: border-box;
+            text-align: center;
         }
         .button-container {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            align-items: flex-start; /* Align buttons to the left */
+            align-items: center; /* Center buttons */
         }
         .button {
             background-color: #ffa500;
@@ -57,7 +58,7 @@
             border: 3px solid #ff8c00;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s, border-color 0.3s;
+            transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
             text-align: center;
             min-width: 200px; /* Minimum width to maintain button shape */
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -67,12 +68,16 @@
         .button:hover {
             background-color: #ff8c00;
             border-color: #ff6500;
+            transform: translateY(-3px); /* Slightly lift the button on hover */
+        }
+        .button:active {
+            transform: translateY(1px); /* Slightly push the button down on click */
         }
     </style>
 </head>
 <body>
     <header class="header">
-        costomise
+        Cosmic Outpost<br>Downloads
     </header>
     <div class="page">
         <div class="button-container">
