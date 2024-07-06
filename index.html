@@ -13,10 +13,22 @@
             color: #333;
             margin: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             padding: 0 20px;
+        }
+        .header {
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
         .page {
             background-color: #fff;
@@ -24,6 +36,7 @@
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 60px; /* Adjust this if the header height changes */
         }
         .button-container {
             display: flex;
@@ -51,6 +64,9 @@
     </style>
 </head>
 <body>
+    <header class="header">
+        costomise
+    </header>
     <div class="page">
         <div class="button-container">
             <button class="button" onclick="window.location.href='https://byson94.itch.io/cosmic-outpost'">Play or download on itch.io</button>
