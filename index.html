@@ -66,6 +66,21 @@
             display: inline-block;
             word-wrap: break-word; /* Ensure long text breaks to fit within button */
         }
+        .button2 {
+            background-color: #ffa500;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 3px solid #ff8c00;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+            text-align: center;
+            min-width: 200px; /* Minimum width to maintain button shape */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            word-wrap: break-word; /* Ensure long text breaks to fit within button */            
+        }
         .button:hover {
             background-color: #ff8c00;
             border-color: #ff6500;
@@ -84,9 +99,7 @@
         <div class="button-container">
             <button class="button" onclick="window.location.href='https://byson94.itch.io/Lonely-Orbit'">Play or download on itch.io</button>
             <button class="button" onclick="window.location.href='https://gd.games/byson94/lonely-orbit/'">Play the NEWEST TEST version on gd.games</button>
-            <button class="button" onclick="window.location.href='https://example3.com'">Not released yet</button>
-            <button class="button" onclick="window.location.href='https://example4.com'">Not released yet</button>
-            <button class="button" onclick="window.location.href='https://example5.com'">Not released yet</button>
+            <button class="button2" onclick="window.location.href='https://example5.com'">Download a past version</button>
         </div>
     </div>
 </body>
